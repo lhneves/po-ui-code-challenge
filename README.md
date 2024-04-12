@@ -1,27 +1,21 @@
-# PoUiCodeChallenge
+# Po-Ui CodeChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+## Inicializar o projeto
 
-## Development server
+Antes de qualquer passo, instale todas as bibliotecas com o comando `npm install`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Library
 
-## Code scaffolding
+Foi criado uma lib, portanto a estrutura do projeto é `/projects/doretto-ui/src/lib`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Components
 
-## Build
+Os componentes foram documentados na biblioteca `storybook`, para ver suas variações, estados e modelos, basta rodar o comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`npm run storybook`
 
-## Running unit tests
+## Testes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Foram criados testes para os componentes, para visualiza-los basta rodar:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`npm run test`
