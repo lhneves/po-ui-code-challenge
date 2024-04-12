@@ -19,3 +19,5 @@ Os componentes foram documentados na biblioteca `storybook`, para ver suas varia
 Foram criados testes para os componentes, para visualiza-los basta rodar:
 
 `npm run test`
+
+Também foi criado uma Action de Build e Teste do projeto, assim verificando a qualidade do código
