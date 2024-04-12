@@ -1,0 +1,6 @@
+<button class="ui-btn" (click)="onClick.emit($event)" [type]="type" [attr.size]="size" [attr.variant]="variant"
+  [attr.danger]="danger" [disabled]="disabled" [attr.aria-label]="ariaLabel">
+  <div class="ui-btn-container">
+    <span *ngIf="label" class="ui-btn-label">{{ label }}</span>
+  </div>
+</button>

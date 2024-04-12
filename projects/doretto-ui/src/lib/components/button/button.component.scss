@@ -1,0 +1,180 @@
+$font-family: "Roboto";
+$font-size: 1rem;
+$font-weight: 500;
+$line-height: 100%;
+$border-radius: 4px;
+$border-width: 2px;
+$border-width-lg: 4px;
+$padding: 0 1em;
+$letter-spacing: auto;
+
+$text-color: #fff;
+$text-color-disabled: #4a5c60;
+$text-color-danger: #fff;
+$color: #753399;
+$color-disabled: #b6bdbf;
+$color-hover: #5b1c7d;
+$color-pressed: #400e58;
+$color-danger: #9b2d27;
+$color-danger-hover: #72211d;
+$color-danger-pressed: #4a1512;
+$background-hover: #d9c2e5;
+$background-danger-hover: #e3aeab;
+$background-danger-pressed: #d58581;
+$border-color-hover: #260538;
+$border-color-danger-hover: #4a1512;
+$background-pressed: #bd94d1;
+$shadow: 0 0 0 #fff;
+$shadow-none: none;
+
+$outline-color-focused: #260538;
+
+.ui-btn {
+  font-size: $font-size;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  border-radius: $border-radius;
+  border-width: $border-width;
+  padding: $padding;
+
+  letter-spacing: $letter-spacing;
+
+  border-style: solid;
+  min-height: 2.75rem;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:enabled:focus,
+  &:enabled:active {
+    outline-color: $outline-color-focused;
+    outline-width: $border-width-lg;
+    outline-style: solid;
+    outline-offset: 2px;
+    cursor: pointer;
+  }
+
+  &[size="large"] {
+    min-height: 3.5rem;
+  }
+
+  &[variant="primary"] {
+    color: $text-color;
+    background-color: $color;
+    box-shadow: $shadow;
+    border-color: transparent;
+
+    &:hover {
+      background-color: $color-hover;
+    }
+
+    &:active {
+      background-color: $color-pressed;
+    }
+
+    &:disabled {
+      color: $text-color-disabled;
+      background-color: $color-disabled;
+      cursor: not-allowed;
+    }
+
+    &[danger="true"] {
+      color: $text-color-danger;
+      background-color: $color-danger;
+      border-color: transparent;
+
+      &:hover {
+        background-color: $color-danger-hover;
+      }
+
+      &:active {
+        background-color: $color-danger-pressed;
+      }
+
+      &:disabled {
+        color: $text-color-disabled;
+        background-color: $color-disabled;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &[variant="secondary"] {
+    color: $color;
+    border-color: $color;
+    background-color: transparent;
+    box-shadow: $shadow-none;
+
+    &:hover,
+    &:active {
+      border-color: $border-color-hover;
+      color: $border-color-hover;
+    }
+
+    &:enabled:hover {
+      background-color: $background-hover;
+    }
+
+    &:enabled:active {
+      background-color: $background-pressed;
+    }
+
+    &:disabled {
+      color: $color-disabled;
+      border-color: $color-disabled;
+      cursor: not-allowed;
+    }
+
+    &[danger="true"] {
+      color: $color-danger;
+      border-color: $color-danger;
+
+      &:enabled:hover {
+        background-color: $background-danger-hover;
+        border-color: $border-color-danger-hover
+      }
+
+      &:enabled:active {
+        background-color: $background-danger-pressed;
+        border-color: $border-color-danger-hover;
+        color: $border-color-danger-hover;
+
+      }
+
+      &:disabled {
+        color: $color-disabled;
+        border-color: $color-disabled;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &[variant="tertiary"] {
+    color: $color;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: $shadow-none;
+
+    &:enabled:hover {
+      background-color: $background-hover;
+      color: $border-color-hover;
+    }
+
+    &:enabled:active {
+      background-color: $background-pressed;
+      color: $color-pressed;
+    }
+
+    &:disabled {
+      color: $color-disabled;
+      background-color: transparent;
+      cursor: not-allowed;
+    }
+  }
+}

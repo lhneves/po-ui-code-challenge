@@ -1,0 +1,8 @@
+<select #select class="ui-select" [value]="selectedOption?.value || ''" [id]="formControlName" [disabled]="disabled"
+  [attr.error]="error">
+  <option value="" disabled selected>{{ placeholder }}</option>
+  <option *ngFor="let option of options" [value]="option.value" [selected]="option.value === selectedOption"
+    (click)="selectOption(option)" id="option">
+    {{ option.label }}
+  </option>
+</select>
